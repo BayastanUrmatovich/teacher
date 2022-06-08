@@ -1,10 +1,11 @@
-import Example1 from "./components/Example1/Example";
+import ExchangeRate from "./ExchangeRate"
 
 
 function App() {
   return (
     <div className="App">
-      <Example1/>
+    <ExchangeRate from="USD" to="KGS" />
+    <ExchangeRate from="EUR" to="KGS" />
     </div>
   );
 }
