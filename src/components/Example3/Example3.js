@@ -1,24 +1,25 @@
 import classes from "./Example3.module.scss";
 
-import { useState } from "react";
 
 
 
-function Example3() {
 
-  const [number, setNumber] = useState(0);
-  function onClick(event) {
-    setNumber(number+1);
-  }
+function Example3({act, number}) {
+
+  
+  // function onClick(event) {
+  //   setNumber(number+1);
+  // }
+
 
   return ( 
     <>
       <div className={classes.Example3}>
 
-        <div >
+        <div>
           {number}
         </div>
-        <button onClick={onClick}>
+        <button onClick={act}>
           Plus
         </button>
         
